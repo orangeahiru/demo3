@@ -1,0 +1,254 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+  /* background-color: rgb(33, 26, 36); */
+  background-color: #000;
+  /* background-color: rgb(45, 11, 61); */
+  color: #fff;
+}
+body {
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* 大枠 */
+.big_background {
+  min-height: 100vh;
+  background-image: url(img/revised_drinking_glass.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 5px 80px rgba(112, 25, 179, 0.6);
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* ヘッダー */
+h1 {
+  font-size: 2.4rem;
+  text-shadow: 0 0 3px #ccc;
+  font-family: 'Noto Serif', serif;
+}
+.just_space {
+  height: 45vh;
+}
+.header_content > p {
+  text-align: center;
+  font-size: 2.0rem;
+  text-shadow: 0 0 5px #ccc;
+  font-family: 'Noto Serif', serif;
+}
+
+/* メイン */
+h2 {
+  margin-top: 20vh;
+  font-size: 3.0rem;
+  font-family: serif;
+  text-align: center;
+}
+.menu_jenre, .access_flex {
+  background-color: rgba(82, 17, 131, 0.6);
+  width: 84%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(82, 17, 131, 0.6), 0 0 4px rgb(33, 26, 36) inset;
+}
+
+/* メニュー */
+.menu_jenre {
+  padding: 30px 30px 60px;
+  margin: 80px auto 0;
+}
+.menu_jenre > h3 {
+  text-align: center;
+  margin: 0 auto;
+  width: 140px;
+  border-bottom: 2px solid #fff;
+  /* font-family: 'Caveat', cursive;
+  font-size: 2.0rem; */
+  font-family: 'Noto Serif', serif;
+  font-size: 1.8rem;
+}
+.top_item {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.top_item > img {
+  width: 32%;
+  border-radius: 10px;
+  border: 1.5px solid rgb(77, 33, 97);
+  box-shadow: 0 0 12px rgb(0, 0, 0);
+}
+.top_item span {
+  font-size: 1.35rem;
+}
+.top_item > p {
+  width: 50%;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-top: 40px;
+}
+.other_items {
+  padding: 0 30px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+/* アクセス */
+.access > h2 {
+  margin-top: 32vh;
+}
+.access_flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px 50px;
+  margin: 24px auto 0;
+}
+.access_content {
+  width: 32%;
+}
+.access_content > h3 {
+  border-bottom: 2px solid #fff;
+  font-size: 1.50rem;
+  font-family: 'Noto Serif', serif;
+  margin-top: 50px;
+}
+.access_content > h4, .access_content > p {
+  font-size: 1.1rem;
+  padding-left: 4px;
+}
+.access_content > h4 {
+  margin-top: 20px;
+}
+.map {
+  width: 60%;
+}
+iframe {
+  max-width: 100%;
+}
+
+/* フッター */
+footer {
+  margin-top: 24vh;
+  background-color: rgb(38, 9, 59);
+  background-image: url(img/caipirinha_footer.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5px rgb(38, 9, 59);
+  padding-top: 24px;
+  color: #aaa;
+}
+.small_wrapper {
+  width: 84%;
+  margin: 0 auto;
+}
+.footer_content {
+  height: 40vh;
+}
+.footer_grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 3fr 2fr 4fr;
+  gap: 20px;
+}
+.footer_content h3 {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.50rem;
+  border-bottom: 2px solid #aaa;
+}
+.footer_comment {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.15rem;
+  margin-top: 6.5vh;
+}
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+
+  /* 大枠 */
+
+  /* ヘッダー */
+
+  /* メイン */
+  h2 {
+    margin-top: 12vh;
+  }
+
+  /* メニュー */
+  .top_item {
+    display: block;
+    margin-top: 40px;
+  }
+  .top_item > img, .top_item > p {
+    width: 100%;
+  }
+  .top_item > p {
+    margin-top: 15px;
+  }
+  .top_item > p > .responsive {
+    font-size: 1.10rem;
+    font-weight: bold;
+  }
+  .other_items {
+    display: block;
+    padding: 0 0 0 10px;
+  }
+
+  /* アクセス */
+  .access > h2 {
+    margin-top: 15vh;
+  }
+  .access_flex {
+    display: block;
+    padding: 20px;
+  }
+  .access_content, .map {
+    width: 100%;
+  }
+  .access_content > h3 {
+    margin-top: 0;
+  }
+  .access_content > h4 {
+    margin-top: 10px;
+  }
+  .map {
+    margin-top: 20px;
+  }
+
+  /* フッター */
+  footer {
+    margin-top: 16vh;
+    background-image: url(img/small_footer_caipirinhi.png);
+  }
+  .footer_content {
+    height: 38vh;
+  }
+  .footer_grid {
+    display: block;
+    margin-top: 0;
+  }
+  .footer_info > h4 {
+    margin-top: 10px;
+  }
+  .footer_comment {
+    display: none;
+  }
+}
